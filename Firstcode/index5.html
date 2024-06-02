@@ -1,33 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Call of Duty</title>
+    <title>NEWS</title>
     <link rel="stylesheet" href="css/all.min.css">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style5.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
-        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-</head>
 
+</head>
 <body>
-        <div class="video-container">
-            <video autoplay loop muted play-inline id="background-video">
-                <source src="codbg.mp4" type="video/mp4">
-            </video>
+    <div class="heading-container">
+        <div class="logo">
+            <i class="fa-solid fa-gun"></i>
+            <p>Call of Duty</p>
         </div>
-    <div class="container">
-        <header>
-            <div class="logo">
-                <i class="fa-solid fa-gun"></i>
-                <p>Call of Duty</p>
-            </div>
+        <nav>
             <ul class="navbar">
                 <li><a href="index.html">HOME</a></li>
                 <li><a href="index2.html">GAMES</a></li>
@@ -35,23 +26,13 @@
                 <li><a href="index4.html">REACTION TIME</a></li>
                 <li><a href="index5.html">NEWS</a></li>
             </ul>
-            <button type="button" id="btn"><i class="fa-solid fa-play"></i>PLAY NOW</button>
-        </header>
-
-        <!-- content  desc starts here -->
-        <div class="content-wrapper">
-            <div class="content-desc">
-                <h1>Call of Duty</h1>
-                <p><span>Call of Duty</span> is a popular first-person shooter video game series known for its intense combat and immersive storytelling.</p>
-                <p>Players experience military missions set in various historical and modern-day settings, featuring both single-player campaigns and multiplayer modes.
-                The series is celebrated for its realistic graphics, dynamic gameplay, and a wide range of weapons and tactics.</p>
-                <button type="button" id="btn-2" onclick="location.href='https://profile.callofduty.com/cod/login'">
-                    <i class="fa-solid fa-right-to-bracket"></i> JOIN US NOW
-                </button>
-            </div>
-            <div class="CoD Mobile"></div> 
-        </div>
+        </nav>
+        <button type="button" id="btn"><i class="fa-solid fa-play"></i>PLAY NOW</button>
     </div>
+
+    <div class="container"></div>
+    <div class="options-container"></div>
+
     <footer>
         <div class="footer-body"></div>
         <div class="logo footer-logo">
@@ -86,7 +67,8 @@
     <div class="footer-bottom">
         <p>Copyright &copy;Infinity Ward, Inc. All Right Reserved | Designed <span>By Francis Cerezo</span>2024</p>
     </div> 
-    
-</body>
 
+        <script src="api-key.js"></script>
+        <script src="script.js"></script>
+</body>
 </html>
