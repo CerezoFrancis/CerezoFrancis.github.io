@@ -95,73 +95,83 @@ nav ul.navbar li a:hover:not(.active) {
     margin-right: 10px;
 }
 
-.clickable-area{
-    height: 100vh;
-    width: 100%;
-    cursor: pointer;
-    background: rgba(175, 13, 13, 0.823);
-    display: grid;
-    place-items: center;
-    font-size: 32px;
+/* Styling for the clickable area */
+.clickable-area {
+    height: 100vh; /* Full height of the viewport */
+    width: 100%; /* Full width */
+    cursor: pointer; /* Cursor style */
+    background: rgba(175, 13, 13, 0.823); /* Background color with alpha */
+    display: grid; /* Grid layout */
+    place-items: center; /* Center the content */
+    font-size: 32px; /* Font size */
 }
 
+/* Styling for the end screen and main menu */
 .end-screen,
-.main-menu{
-    display: none;
-    position: fixed;
-    height: 100vh;
-    width: 100%;
-    top: 0;
-    left: 0;
-    background: #232323;
-    color: #fff;
-    text-align: center;
+.main-menu {
+    display: none; /* Initially hidden */
+    position: fixed; /* Fixed positioning */
+    height: 100vh; /* Full height of the viewport */
+    width: 100%; /* Full width */
+    top: 0; /* Positioned from the top */
+    left: 0; /* Positioned from the left */
+    background: #232323; /* Background color */
+    color: #fff; /* Text color */
+    text-align: center; /* Center align text */
 }
 
+/* Styling for active main menu and end screen */
 .main-menu.active,
-.end-screen.active{
-    display: grid;
-    place-items: center;
+.end-screen.active {
+    display: grid; /* Display as grid */
+    place-items: center; /* Center the content */
 }
 
-.main-menu{
-    cursor: pointer;
+/* Styling for the main menu */
+.main-menu {
+    cursor: pointer; /* Cursor style */
 }
 
-.react{
-    max-width: 800px;
-    padding: 0 32px;
+/* Styling for the react container */
+.react {
+    max-width: 800px; /* Maximum width */
+    padding: 0 32px; /* Padding */
 }
 
-.main-menu h1{
-    font-size: 70px;
-    margin: 8px 0;
+/* Styling for main menu heading */
+.main-menu h1 {
+    font-size: 70px; /* Font size */
+    margin: 8px 0; /* Margin */
 }
 
-.react p{
-    font-size: 20px;
-    line-height: 2;
-    font-weight: 800;
-    margin: 0;
+/* Styling for react paragraph */
+.react p {
+    font-size: 20px; /* Font size */
+    line-height: 2; /* Line height */
+    font-weight: 800; /* Font weight */
+    margin: 0; /* Margin */
 }
 
-.end-screen h1{
-    font-size: 30px;
+/* Styling for end screen heading */
+.end-screen h1 {
+    font-size: 30px; /* Font size */
 }
 
-.reaction-time-text{
-    font-size: 100px;
-    font-weight: 900;
+/* Styling for reaction time text */
+.reaction-time-text {
+    font-size: 100px; /* Font size */
+    font-weight: 900; /* Font weight */
 }
 
-.end-screen .play-again-btn{
-    border: none;
-    background: #fff7d6;
-    font-size: 20px;
-    padding: 8px 32px;
-    margin-top: 20px;
-    text-transform: uppercase;
-    font-weight: 900;
-    letter-spacing: 4px;
-    cursor: pointer;
+/* Styling for play again button */
+.end-screen .play-again-btn {
+    border: none; /* No border */
+    background: #fff7d6; /* Background color */
+    font-size: 20px; /* Font size */
+    padding: 8px 32px; /* Padding */
+    margin-top: 20px; /* Margin top */
+    text-transform: uppercase; /* Uppercase text */
+    font-weight: 900; /* Font weight */
+    letter-spacing: 4px; /* Letter spacing */
+    cursor: pointer; /* Cursor style */
 }

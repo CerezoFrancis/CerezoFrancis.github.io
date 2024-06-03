@@ -1,17 +1,21 @@
+/* Importing Poppins font from Google Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-*{
+
+/* Universal selector for margin, padding, and box-sizing */
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
+/* Body styling */
 body {
     background: rgba(0, 0, 0, 0.897);
     font-family: 'Poppins', sans-serif;
     height: 130vh;
-    
 }
 
+/* Background video styling */
 #background-video {
     position: absolute;
     top: 50%;
@@ -24,6 +28,7 @@ body {
     display: flex;
 }
 
+/* Video container styling */
 .video-container {
     position: fixed;
     top: 0;
@@ -34,6 +39,7 @@ body {
     z-index: -1;
 }
 
+/* Responsive video adjustments */
 @media (min-aspect-ratio: 16/9) {
     .background-video {
         width: 100%;
@@ -48,7 +54,8 @@ body {
     }
 }
 
-.container{
+/* Container styling */
+.container {
     width: 100%;
     height: 100vh;
     background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5));
@@ -56,7 +63,8 @@ body {
     background-position: center;
 }
 
-header{
+/* Header styling */
+header {
     width: 100%;
     height: 10vh;
     background: rgba(0,0,0,0.5);
@@ -64,7 +72,9 @@ header{
     justify-content: space-between;
     align-items: center;
 }
-.logo{
+
+/* Logo styling */
+.logo {
     width: 300px;
     height: 10vh;
     background: rgba(0, 0, 0, 0.823);
@@ -75,33 +85,37 @@ header{
     padding: 10px;
     line-height: 1.3rem;
 }
-.logo .fa-solid{
+.logo .fa-solid {
     font-size: 35px;
 }
-.logo p{
+.logo p {
     width: 180px;
     margin-left: 5px;
     font-size: 28px;
 }
-ul.navbar{
+
+/* Navbar styling */
+ul.navbar {
     display: flex;
     list-style: none;
 }
-ul.navbar li{
+ul.navbar li {
     width: 180px;
 }
-ul.navbar li a{
+ul.navbar li a {
     text-decoration: none;
     color: #fff;
     font-weight: 600;
 }
-ul.navbar li a.active{
+ul.navbar li a.active {
     color: rgb(255, 0, 0);
 }
-ul.navbar li a:hover:not(.active){
+ul.navbar li a:hover:not(.active) {
     color: rgb(255, 0, 0);
 }
-#btn{
+
+/* Button styling */
+#btn {
     width: 250px;
     height: 10vh;
     background: rgba(175, 13, 13, 0.823);
@@ -114,12 +128,13 @@ ul.navbar li a:hover:not(.active){
     text-align: right;
     padding-right: 40px;
 }
-#btn .fas{
+#btn .fas {
     margin-right: 10px;
 }
-/* Header ends here */
-.content-wrapper{
-    width:80%;
+
+/* Content wrapper styling */
+.content-wrapper {
+    width: 80%;
     min-height: 50vh;
     margin-left: 20vh;
     margin-top: 10vh;
@@ -128,21 +143,24 @@ ul.navbar li a:hover:not(.active){
     align-items: center;
     color: #fff;
 }
-.content-desc h1{
+
+/* Content description styling */
+.content-desc h1 {
     font-size: 3rem;
     margin-bottom: 10px;
 }
-.content-desc p{
+.content-desc p {
     width: 550px;
     font-size: 1.3rem;
     line-height: 2rem;
     margin-bottom: 10px;
 }
-.content-desc span{
+.content-desc span {
     color: rgb(255, 0, 0);
 }
 
-#btn-2{
+/* Secondary button styling */
+#btn-2 {
     width: 350px;
     height: 10vh;
     padding-left: 20px;
@@ -157,13 +175,14 @@ ul.navbar li a:hover:not(.active){
     text-align: left;
 }
 
-.CoD{
+/* CoD block styling */
+.CoD {
     width: 400px;
     height: 400px;
     background: linear-gradient(rgba(38, 2, 39, 0.849),rgb(255, 0, 0));
     position: relative;
 }
-.CoD::after{
+.CoD::after {
     content: '';
     width: 410px;
     height: 410px;
@@ -174,8 +193,9 @@ ul.navbar li a:hover:not(.active){
     bottom: 0;
     left: -150px;
 }
-/* Hero Section ends here */
-footer{
+
+/* Footer styling */
+footer {
     width: 100%;
     height: 35vh;
     background: #282828f2;
@@ -183,44 +203,46 @@ footer{
     align-items: center;
     position: relative;
 }
-.footer-body{
+.footer-body {
     margin: 90px;
     display: flex;
     justify-content: space-around;
     margin-right: 30px;
 }
-.footer-logo{
+.footer-logo {
     height: 12vh;
     background: rgba(56, 3, 58, 0.849);
     color: #ffffff;
     line-height: 1.7rem;
     clip-path: polygon(50% 0%, 100% 0, 72% 50%, 100% 100%, 0 100%, 0% 60%, 0 0);
 }
-.footer-logo i{
+.footer-logo i {
     margin-right: 5px;
 }
-footer ul h3{
+footer ul h3 {
     color: #fff;
     font-weight: 450;
 }
-footer ul{
+footer ul {
     list-style: none;
     line-height: 2.5rem;
     margin-left: 200px;
 }
-ul li a .fab{
+ul li a .fab {
     font-size: 1.2rem;
     color: rgba(56, 3, 58, 0.849);
     margin-right: 15px;
 }
-ul li a{
+ul li a {
     text-decoration: none;
     color: #fff;
 }
-ul li a:hover{
+ul li a:hover {
     color: rgb(175, 13, 13);
 }
-.footer-bottom{
+
+/* Footer bottom styling */
+.footer-bottom {
     width: 100%;
     height: 7vh;
     background: #000;
@@ -230,7 +252,7 @@ ul li a:hover{
     align-items: center;
     font-size: 0.875rem;
 }
-.footer-bottom span{
+.footer-bottom span {
     color: rgb(175, 13, 13);
     font-weight: bold;
 }

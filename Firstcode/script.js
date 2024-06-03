@@ -1,11 +1,13 @@
+// Get DOM elements
 const container = document.querySelector(".container");
 const optionsContainer = document.querySelector(".options-container");
 
+// Initialize variables
 const country = ["us", "cn", "uk", "gb", "br"];
 const options = ["entertainment"];
-
 let requestURL;
 
+// Function to generate the user interface based on fetched articles
 const generateUI = (articles) => {
     container.innerHTML = "";
     for (let item of articles) {
@@ -28,6 +30,7 @@ const generateUI = (articles) => {
     }
 };
 
+// Function to fetch news data from the API
 const getNews = async () => {
     container.innerHTML = "";
     try {
@@ -45,11 +48,13 @@ const getNews = async () => {
     }
 };
 
+// Initialize options and fetch news on page load
 const init = () => {
     optionsContainer.innerHTML = "";
     getNews();
 };
 
+// Set request URL and initialize on page load
 window.onload = () => {
     requestURL = `https://newsdata.io/api/1/news?apikey=pub_45383d428ac1fbcd851fb29fb14535fd6184b&q=call%20of%20duty%20games&country=br,cn,de,gb,us&category=entertainment`;
     init();

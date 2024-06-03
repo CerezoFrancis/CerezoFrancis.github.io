@@ -1,133 +1,166 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-*{
+
+/* Resetting margin and padding for all elements, setting box-sizing to border-box */
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
+/* Styling for the body element */
 body {
-    background: linear-gradient(rgb(0, 0, 0),rgb(66, 0, 0), rgba(136, 1, 1, 0.988));
+    background: linear-gradient(rgb(0, 0, 0), rgb(66, 0, 0), rgba(136, 1, 1, 0.988));
     font-family: 'Poppins', sans-serif;
-    height: 315vh;
+    height: 315vh; /* Height for the full length of the page */
 }
-.wrapper{
+
+/* Wrapper for the main content */
+.wrapper {
     margin: 80px auto;
     width: 70%;
     height: 70%;
 }
 
-img{
+/* General styling for images */
+img {
     max-height: 380px;
     float: left;
     margin-right: 70px;
     border-radius: 10px;
 }
 
-img:hover{
+/* Hover effect for images */
+img:hover {
     transform: translateY(-30px);
 }
-.text-box{
+
+/* Styling for the text box containing content */
+.text-box {
     color: #fff;
 }
-.text-box h2{
+
+/* Heading inside the text box */
+.text-box h2 {
     font-size: 50px;
 }
-.text-box p{
+
+/* Paragraph inside the text box */
+.text-box p {
     font-size: 20px;
     margin-bottom: 170px;
 }
-.section-1{
+
+/* Styling for the first section */
+.section-1 {
     margin: 80px auto;
     width: 80%;
     height: 50%;
 }
-.section-1-wrapper h2{
+
+.section-1-wrapper h2 {
     color: #fff;
     font-size: 50px;
 }
-.section-1-wrapper p{
+
+.section-1-wrapper p {
     color: #fff;
     font-size: 20px;
     margin-bottom: 35px;
 }
-.section-1-wrapper img{
+
+.section-1-wrapper img {
     float: left;
-    
 }
 
-.section-2{
+/* Styling for the second section */
+.section-2 {
     margin: 80px auto;
     width: 80%;
     height: 50%;
 }
-.section-2-wrapper h2{
+
+.section-2-wrapper h2 {
     color: #fff;
     font-size: 50px;
-    
 }
-.section-2-wrapper p{
+
+.section-2-wrapper p {
     color: #fff;
     font-size: 20px;
     margin-bottom: 30px;
 }
-.section-2-wrapper img{
+
+.section-2-wrapper img {
     float: right;
     margin-left: 70px;
 }
 
-.section-3{
+/* Styling for the third section */
+.section-3 {
     margin: 80px auto;
     width: 80%;
     height: 50%;
 }
-.section-3-wrapper h2{
+
+.section-3-wrapper h2 {
     color: #fff;
     font-size: 50px;
 }
-.section-3-wrapper p{
+
+.section-3-wrapper p {
     color: #fff;
     font-size: 20px;
     margin-bottom: 30px;
 }
-.section-3-wrapper img{
+
+.section-3-wrapper img {
     float: left;
     max-height: 400px;
 }
 
-.section-4{
+/* Styling for the fourth section */
+.section-4 {
     margin: 80px auto;
     width: 80%;
     height: 50%;
 }
-.section-4-wrapper h2{
+
+.section-4-wrapper h2 {
     color: #fff;
     font-size: 48px;
 }
-.section-4-wrapper p{
+
+.section-4-wrapper p {
     color: #fff;
     font-size: 20px;
     margin-bottom: 30px;
 }
-.section-4-wrapper img{
+
+.section-4-wrapper img {
     float: right;
     margin-left: 70px;
 }
 
-.container{
+/* Container for general use */
+.container {
     width: 100%;
     height: 100vh;
     background-size: cover;
     background-position: center;
 }
-header{
+
+/* Styling for the header */
+header {
     width: 100%;
     height: 10vh;
-    background: rgba(0,0,0,0.5);
+    background: rgba(0, 0, 0, 0.5);
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
-.logo{
+
+/* Styling for the logo */
+.logo {
     width: 300px;
     height: 10vh;
     background: rgba(0, 0, 0, 0.823);
@@ -138,16 +171,19 @@ header{
     padding: 10px;
     line-height: 1.3rem;
 }
-.logo .fa-solid{
+
+.logo .fa-solid {
     font-size: 35px;
 }
-.logo p{
+
+.logo p {
     width: 180px;
     margin-left: 10px;
     font-size: 28px;
 }
 
-#btn-2{
+/* Styling for the button in the logo */
+#btn-2 {
     background-color: #211d1dab;
     color: #fff;
     padding: 10px 20px;
@@ -158,43 +194,56 @@ header{
     display: inline-flex;
     align-items: center;
 }
+
 #btn-2 i {
     margin-right: 8px;
 }
-.logo2 button{
+
+/* Additional button styling */
+.logo2 button {
     margin: 5px;
 }
 
-.logo2{
+/* Styling for the second logo */
+.logo2 {
     width: 300px;
     height: 10vh;
     display: flex;
     align-items: left;
     color: #fff;
 }
-.logo2 .fa-brands{
+
+.logo2 .fa-brands {
     font-size: 25px;
     margin-right: 10px;
 }
-ul.navbar{
+
+/* Styling for the navigation bar */
+ul.navbar {
     display: flex;
     list-style: none;
 }
-ul.navbar li{
+
+ul.navbar li {
     width: 180px;
 }
-ul.navbar li a{
+
+ul.navbar li a {
     text-decoration: none;
     color: #fff;
     font-weight: 600;
 }
-ul.navbar li a.active{
+
+ul.navbar li a.active {
     color: rgb(255, 0, 0);
 }
-ul.navbar li a:hover:not(.active){
+
+ul.navbar li a:hover:not(.active) {
     color: rgb(255, 0, 0);
 }
-#btn{
+
+/* Styling for the button in the header */
+#btn {
     width: 250px;
     height: 10vh;
     background: rgba(175, 13, 13, 0.823);
@@ -207,26 +256,33 @@ ul.navbar li a:hover:not(.active){
     text-align: right;
     padding-right: 40px;
 }
-#btn .fas-solid{
+
+#btn .fas-solid {
     margin-right: 10px;
 }
-.logo-section{
+
+/* Styling for the logo section */
+.logo-section {
     display: flex;
     align-items: center;
     justify-content: center;
     margin: 30px 0;
 }
-.logo-section h1{
+
+.logo-section h1 {
     color: rgb(175, 13, 13);
     width: 180px;
     margin-left: 10px;
     font-size: 2rem;
 }
-.logo-section .fa-solid{
+
+.logo-section .fa-solid {
     font-size: 6rem;
     color: rgb(175, 13, 13);
 }
-footer{
+
+/* Styling for the footer */
+footer {
     width: 100%;
     height: 35vh;
     background: #282828f2;
@@ -234,44 +290,54 @@ footer{
     align-items: center;
     position: relative;
 }
-.footer-body{
+
+.footer-body {
     margin: 90px;
     display: flex;
     justify-content: space-around;
     margin-right: 30px;
 }
-.footer-logo{
+
+.footer-logo {
     height: 12vh;
     background: rgba(56, 3, 58, 0.849);
     color: #ffffff;
     line-height: 1.7rem;
     clip-path: polygon(50% 0%, 100% 0, 72% 50%, 100% 100%, 0 100%, 0% 60%, 0 0);
 }
-.footer-logo i{
+
+.footer-logo i {
     margin-right: 5px;
 }
-footer ul h3{
+
+footer ul h3 {
     color: #fff;
     font-weight: 450;
 }
-footer ul{
+
+footer ul {
     list-style: none;
     line-height: 2.5rem;
     margin-left: 200px;
 }
-ul li a .fab{
+
+ul li a .fab {
     font-size: 1.2rem;
     color: rgba(56, 3, 58, 0.849);
     margin-right: 15px;
 }
-ul li a{
+
+ul li a {
     text-decoration: none;
     color: #fff;
 }
-ul li a:hover{
+
+ul li a:hover {
     color: rgb(175, 13, 13);
 }
-.footer-bottom{
+
+/* Styling for the bottom part of the footer */
+.footer-bottom {
     width: 100%;
     height: 7vh;
     background: #000;
@@ -281,7 +347,8 @@ ul li a:hover{
     align-items: center;
     font-size: 0.875rem;
 }
-.footer-bottom span{
+
+.footer-bottom span {
     color: rgb(175, 13, 13);
     font-weight: bold;
 }
